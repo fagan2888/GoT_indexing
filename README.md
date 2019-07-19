@@ -9,8 +9,8 @@ Develop an inverted index to identify which words are present in the corpus of d
 
 Program was developed using a spark script written in python. It can be run using the following command.
 
-`cd GoT_indexing`
-`./run.sh`
+`cd GoT_indexing/src`
+` /usr/local/spark/bin/spark-submit indexing.py `
 
 This is a shell script which runs the python script with the spark configurations.
 
