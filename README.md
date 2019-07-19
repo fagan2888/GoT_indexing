@@ -31,8 +31,8 @@ This is a shell script which runs the python script with the spark configuration
 ### 3. Split the document into words, convert them to lowercase and map each word to its corresponding file id
 
      
-      `files_part_df_rdd = files_part_df.rdd
-       word_document = files_part_df_rdd.map(lambda word_file_pair: ((word_file_pair[0],word_file_pair[1].lower().split()))).flatMap( lambda x: ([(y,x[0]) for y in x[1]]))`
+      ` files_part_df_rdd = files_part_df.rdd
+       word_document = files_part_df_rdd.map(lambda word_file_pair: ((word_file_pair[0],word_file_pair[1].lower().split()))).flatMap( lambda x: ([(y,x[0]) for y in x[1]])) `
        
 ### 4. Select the distinct (word, filename) pairs
   
